@@ -9,7 +9,7 @@ const workbook = new Excel.Workbook();
 
 // readmyFile();
 
-const sheet = workbook.addWorksheet("20200217_20200221", {
+const sheet = workbook.addWorksheet("Hello", {
   views: [{ showGridLines: true }]
 });
 sheet.columns = [
@@ -150,7 +150,7 @@ sheet.getColumn("I").values = [
 sheet.getColumn("J").values = [null, null, "DAY", 17];
 sheet.getColumn("K").values = [null, null, "TO", 21];
 
-sheet.getCell("B6 L13").border = {
+sheet.getCell("B4").border = {
   top: { style: "thin" },
   left: { style: "thin" },
   bottom: { style: "thin" },
